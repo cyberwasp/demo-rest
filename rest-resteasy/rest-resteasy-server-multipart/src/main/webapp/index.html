@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<form action="resteasy/multipart/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" id="uploadedFile" name="uploadedFile"/>
+    <textarea id="comment" name="comment"></textarea>
+    <button type="submit">Send</button>
+</form>
+<script>
+    $(function () {
+        var fileInput = $('.upload-file');
+        $('.upload-form').submit(function (e) {
+            $("#n").val($('input[type=file]').val());
+            if (!fileInput.get(0).files.length) {
+                alert('Select a file');
+                return false;
+            }
+        });
+    });
+</script>
+</body>
+</html>

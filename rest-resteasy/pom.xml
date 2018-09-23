@@ -23,6 +23,7 @@
         <module>rest-resteasy-server-bean</module>
         <module>rest-resteasy-server-exception</module>
         <module>rest-resteasy-server-multipart</module>
+        <module>rest-resteasy-server-persist</module>
         <module>rest-resteasy-server-simple</module>
     </modules>
 

@@ -9,28 +9,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rest-resteasy-server-bean</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>rest-resteasy-server-persist</artifactId>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>ru.cwasp.demo</groupId>
-            <artifactId>rest-common-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-undertow</artifactId>
-            <version>${resteasy.version}</version>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>io.undertow</groupId>
-            <artifactId>undertow-servlet</artifactId>
-            <version>${undertow.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.4.1</version>
         </dependency>
     </dependencies>
 </project>

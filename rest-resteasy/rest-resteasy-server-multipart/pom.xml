@@ -28,9 +28,4 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>resteasy-multipart-server</finalName>
-    </build>
-
 </project>

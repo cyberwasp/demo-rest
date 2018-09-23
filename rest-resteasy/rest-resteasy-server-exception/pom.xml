@@ -19,9 +19,4 @@
             <version>3.0.10.Final</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>resteasy-exception-server</finalName>
-    </build>
-
 </project>
